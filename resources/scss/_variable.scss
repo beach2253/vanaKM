@@ -1,0 +1,55 @@
+:root{
+    --light : hwb(315 90% 10%);
+    --light-light: hwb(315 90% 0%);
+    --light-dark: hwb(315 90% 20%);
+
+    --dark : hsl(200, 80%, 10%);
+    --dark-light: hwb(200 80% 50%);
+    --dark-dark: hwb(200 50% 90%);
+
+    --primery : hsl(150, 90%, 50%);
+    --primery-dark : hsl(150, 50%, 20%);
+    --primery-light : hsl(150, 50%, 80%);
+    --accent : hsl(25, 60%, 50%);
+    --accent-dark : hsl(25, 60%, 20%);
+    --accent-light : hsl(25, 60%, 80%);
+
+    --content:var(--dark);
+    --content-light:var(--dark-light);
+    --content-dark:var(--dark-dark);
+
+    --backdrop:var(--light);
+    --backdrop-light:var(--light-light);
+    --backdrop-dark:var(--light-dark);
+
+    --content-inv:var(--light);
+    --content-inv-light:var(--light-light);
+    --content-inv-dark:var(--light-dark);
+
+    --backdrop-inv:var(--dark);
+    --backdrop-inv-light:var(--dark-light);
+    --backdrop-inv-dark:var(--dark-dark);
+
+    @media (prefers-color-scheme: dark) {
+        --content:var(--light);
+        --backdrop:var(--dark);
+        --content-inv:var(--dark);
+        --backdrop-inv:var(--light);
+
+        --content:var(--light);
+        --content-light:var(--light-light);
+        --content-dark:var(--light-dark);
+
+        --backdrop:var(--dark);
+        --backdrop-light:var(--dark-light);
+        --backdrop-dark:var(--dark-dark);
+
+        --content-inv:var(--dark);
+        --content-inv-light:var(--dark-light);
+        --content-inv-dark:var(--dark-dark);
+
+        --backdrop-inv:var(--light);
+        --backdrop-inv-light:var(--light-light);
+        --backdrop-inv-dark:var(--light-dark);
+    }
+}

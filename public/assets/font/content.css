@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'content';
+    src: url('Bariol-Regular.eot');
+    src: url('Bariol-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Bariol-Regular.woff2') format('woff2'),
+        url('Bariol-Regular.woff') format('woff'),
+        url('Bariol-Regular.ttf') format('truetype'),
+        url('Bariol-Regular.svg#Bariol-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'content';
+    src: url('Bariol-Bold.eot');
+    src: url('Bariol-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Bariol-Bold.woff2') format('woff2'),
+        url('Bariol-Bold.woff') format('woff'),
+        url('Bariol-Bold.ttf') format('truetype'),
+        url('Bariol-Bold.svg#Bariol-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'content';
+    src: url('DBHelvethaicaMonX-75Bd.eot');
+    src: url('DBHelvethaicaMonX-75Bd.eot?#iefix') format('embedded-opentype'),
+        url('DBHelvethaicaMonX-75Bd.woff2') format('woff2'),
+        url('DBHelvethaicaMonX-75Bd.woff') format('woff'),
+        url('DBHelvethaicaMonX-75Bd.ttf') format('truetype'),
+        url('DBHelvethaicaMonX-75Bd.svg#DBHelvethaicaMonX-75Bd') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'content';
+    src: url('DBHelvethaicaMonX-55Regular.eot');
+    src: url('DBHelvethaicaMonX-55Regular.eot?#iefix') format('embedded-opentype'),
+        url('DBHelvethaicaMonX-55Regular.woff2') format('woff2'),
+        url('DBHelvethaicaMonX-55Regular.woff') format('woff'),
+        url('DBHelvethaicaMonX-55Regular.ttf') format('truetype'),
+        url('DBHelvethaicaMonX-55Regular.svg#DBHelvethaicaMonX-55Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

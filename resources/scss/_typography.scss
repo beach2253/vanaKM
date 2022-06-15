@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'header';
+    src: url('../../public/assets/font/SarunIndiannaJone.ttf');
+    src: url('../../public/assets/font/SarunIndiannaJone.woff2') format('woff2'),
+         url('../../public/assets/font/SarunIndiannaJone.woff') format('woff'),
+         url('../../public/assets/font/SarunIndiannaJone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+E00-E7F;
+}
+@font-face {
+    font-family: 'header';
+    src: url('../../public/assets/font/adventure-webfont.ttf');
+    src: url('../../public/assets/font/adventure-webfont.eot') format('embedded-opentype'),
+         url('../../public/assets/font/adventure-webfont.woff2') format('woff2'),
+         url('../../public/assets/font/adventure-webfont.woff') format('woff'),
+         url('../../public/assets/font/adventure-webfont.ttf') format('truetype'),
+         url('../../public/assets/font/adventure-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range:U+00-7F;
+}
+@font-face {
+    font-family: 'header';
+    src: url('../../public/assets/font/VerveineW01-Regular.ttf');
+    src: url('../../public/assets/font/VerveineW01-Regular.eot') format('embedded-opentype'),
+         url('../../public/assets/font/VerveineW01-Regular.woff2') format('woff2'),
+         url('../../public/assets/font/VerveineW01-Regular.woff') format('woff'),
+         url('../../public/assets/font/VerveineW01-Regular.ttf') format('truetype'),
+         url('../../public/assets/font/VerveineW01-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range:U+2150-218F;
+}
+
+@font-face {
+    font-family: 'content';
+    src: url('../../public/assets/font/Bariol-Regular.eot');
+    src: url('../../public/assets/font/Bariol-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/font/Bariol-Regular.woff2') format('woff2'),
+        url('../../public/assets/font/Bariol-Regular.woff') format('woff'),
+        url('../../public/assets/font/Bariol-Regular.ttf') format('truetype'),
+        url('../../public/assets/font/Bariol-Regular.svg#Bariol-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range:U+00-52F, U+1E00-1FFF, U+2200-22FF;
+}
+@font-face {
+    font-family: 'content';
+    src: url('../../public/assets/font/Bariol-Bold.eot');
+    src: url('../../public/assets/font/Bariol-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/font/Bariol-Bold.woff2') format('woff2'),
+        url('../../public/assets/font/Bariol-Bold.woff') format('woff'),
+        url('../../public/assets/font/Bariol-Bold.ttf') format('truetype'),
+        url('../../public/assets/font/Bariol-Bold.svg#Bariol-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    unicode-range:U+00-52F, U+1E00-1FFF, U+2200-22FF;
+}
+@font-face {
+    font-family: 'content';
+    src: url('../../public/assets/font/DBHelvethaicaMonX-55Regular.eot');
+    src: url('../../public/assets/font/DBHelvethaicaMonX-55Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/font/DBHelvethaicaMonX-55Regular.woff2') format('woff2'),
+        url('../../public/assets/font/DBHelvethaicaMonX-55Regular.woff') format('woff'),
+        url('../../public/assets/font/DBHelvethaicaMonX-55Regular.ttf') format('truetype'),
+        url('../../public/assets/font/DBHelvethaicaMonX-55Regular.svg#DBHelvethaicaMonX-55Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+E00-E7F;
+}
+@font-face {
+    font-family: 'content';
+    src: url('../../public/assets/font/DBHelvethaicaMonX-75Bd.eot');
+    src: url('../../public/assets/font/DBHelvethaicaMonX-75Bd.eot?#iefix') format('embedded-opentype'),
+        url('../../public/assets/font/DBHelvethaicaMonX-75Bd.woff2') format('woff2'),
+        url('../../public/assets/font/DBHelvethaicaMonX-75Bd.woff') format('woff'),
+        url('../../public/assets/font/DBHelvethaicaMonX-75Bd.ttf') format('truetype'),
+        url('../../public/assets/font/DBHelvethaicaMonX-75Bd.svg#DBHelvethaicaMonX-75Bd') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+E00-E7F;
+}
+
+
+
+
+*{
+    font-family: 'content', sans-serif;
+    font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'header', sans-serif;
+}
