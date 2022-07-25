@@ -20,15 +20,15 @@ class DocumentSeeder extends Seeder
         //
         Document::factory(10)->create();
         // DB::table('document')->incert([
-        //     // 'title'=> Str::random(10),
-        //     // 'discription'=> Str::random(30),
-        //     // 'owner'=> Str::random(7).' '.Str::random(12),
-        //     // 'referance'=> Str::random(5),
-        //     // 'fileLocation'=> Str::random(5),
-        //     // 'revision'=> Str::random(3),
-        //     // 'type'=> 'DS/KM: Doc support', // SM: System manual /PR: Procedure /WI: Work Instructuction /SD/SP/MN
-        //     // 'permission'=> Str::random(3), // Might controle by document type
-        //     // 'status'=> Str::random(10),
+        //     'title'=> Str::random(10),
+        //     'discription'=> Str::random(30),
+        //     'owner'=> Str::random(7).' '.Str::random(12),
+        //     'referance'=> Str::random(5),
+        //     'fileLocation'=> Str::random(5),
+        //     'revision'=> Str::random(3),
+        //     'type'=> 'DS/KM: Doc support', // SM: System manual /PR: Procedure /WI: Work Instructuction /SD/SP/MN
+        //     'permission'=> Str::random(3), // Might controle by document type
+        //     'status'=> Str::random(10),
 
         //     'fk_user_owner'=>Str::random(5),
         //     'type'=>'DS/KM: Doc support',
