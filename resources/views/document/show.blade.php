@@ -1,6 +1,7 @@
 {{-- show single document --}}
 <x-app-layout>
-
+    <!-- {{dd($document)}} -->
+    <!-- {{dd($document['Doc_Name'])}} -->
     <x-slot name="header">
         <a href="/document">back </a>
         <h2>{{ $document['title'] }}</h2>

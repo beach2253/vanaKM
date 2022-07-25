@@ -5,9 +5,7 @@
         <h2 class="font-semibold text-xl leading-tight">
             {{ __('Document') }}
         </h2>
-        <a href="/document/create"><button class="py-1 px-4 text-content bg-backdrop">upload document</button></a>
-        <button class="py-1 px-4 text-content bg-backdrop">my document</button>
-        <button class="py-1 px-4 text-content bg-backdrop">manage document</button>
+       <x-document-nav/>
     </x-slot>
 
     <div class="py-12">
@@ -17,12 +15,13 @@
 
                     <h2>Km document</h2>
                     <ul>
+                        
                         @foreach ($documents as $doc)
-                        {{-- @if ($doc['type']=='Doc') --}}
-                        <li><a href="/document/{{$doc['id']}}">
-                            {{$doc['type']}} : {{$doc['title']}}</li>
+                        <!-- {{-- @if ($doc['type']=='Doc') --}} -->
+                        <li><a href="/documents/{{$doc['Doc_Name']}}">
+                            {{$doc['Doc_Type']}} : {{$doc['Doc_Name']}}</li>
                         </a>
-                        {{-- @endif --}}
+                        <!-- {{-- @endif --}} -->
                         @endforeach
                     </ul>
                 </div>

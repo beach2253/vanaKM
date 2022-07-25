@@ -4,9 +4,7 @@
         <h2 class="font-semibold text-xl leading-tight">
             {{ __('Document') }}
         </h2>
-        <a href="/document/create"></a><button class="py-1 px-4 text-content bg-backdrop">upload document</button>
-        <button class="py-1 px-4 text-content bg-backdrop">my document</button>
-        <button class="py-1 px-4 text-content bg-backdrop">manage document</button>
+        <x-document-nav/>
     </x-slot>
 
     <div class="py-12">
@@ -17,11 +15,11 @@
                     <h2>Create Document</h2>
 
                     <hr>
-                    <form action="" class="grid grid-cols-2 gap-2">
+                    <form action="{{route('AddDocument')}}" method="post" enctype="multipart/form-data" class="grid grid-cols-2 gap-2">
                         @csrf
                         <div class="py-2 col-span-2">
                             Date :
-                            <input class="bg-backdrop rounded-md" type="date" disabled name="" value="{{date('Y-m-d')}}" id="">
+                            <input class="bg-backdrop rounded-md" type="date" disabled name="date" value="{{date('Y-m-d')}}" id="">
 
                         </div>
                         <div class="py-2">
@@ -75,8 +73,10 @@
                         <div class="py-2">
                             Dar Number :
 
-                            <input class="bg-backdrop rounded-md" type="text" disabled value="{{'DAR'.date('Y').str_pad(random_int( 0, 9000 ) ,4,'0')}}">
+                            <input class="bg-backdrop rounded-md"  name="DocCode" type="text"  value="{{'DAR'.date('Y').str_pad(random_int( 0, 9000 ) ,4,'0')}}">
                         </div>
+
+                        
                             <span>
                                 <label for="type">Type</label>
                                 <select class="bg-backdrop rounded-md"  name="type" id="type">
@@ -117,6 +117,12 @@
                                     </optgroup> --}}
                                 </select>
                             </span>
+                            <div class="py-2 col-span-2">
+                            Document Name :
+                            <input maxlength="10" class="bg-backdrop-dark rounded-md" type="text" name="Doc_Name">
+
+                        </div>
+                                        
                         <div class="py-2">
                             <p>Objective </p>
                             <div class="flex flex-col md:flex-row justify-around flex-wrap">
@@ -138,22 +144,22 @@
 
                         <div class="flex flex-wrap items-center">
                             <span class="px-4">
-                                <label for="dateUse">date-keep :  </label>
-                                <input type="date" name="date" id="dateUse" class="bg-backdrop-dark rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50  my-2 {{$errors->has('name') ? ' border-accent' : ''}}"></span>
+                                <label for="dateUse">date-use :  </label>
+                                <input type="date" name="usedate" id="dateUse" class="bg-backdrop-dark rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50  my-2 {{$errors->has('name') ? ' border-accent' : ''}}"></span>
                             <span class="px-4">
-                                <label for="dateKeep">date-keep :  </label>
-                                <input type="date" name="date" id="dateKeep" class="bg-backdrop-dark rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50  my-2 {{$errors->has('name') ? ' border-accent' : ''}}"></span>
+                                <label for="dateKeep">Year Life :  </label>
+                                <input type="number" name="Year" id="Year" class="bg-backdrop-dark rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50  my-2 {{$errors->has('name') ? ' border-accent' : ''}}"></span>
                             <span class="px-4">
                                 <label>File</label>
-                                <input type="file">
+                                <input type="file" name="file">
                             </span>
                         </div>
 
 
                             <div class="flex justify-end mt-4 ">
-                                <button  class='mr-5 inline-flex items-center px-4 py-2 bg-backdrop-inv border border-transparent rounded-md font-semibold text-xs text-content-inv uppercase tracking-widest hover:bg-backdrop-light active:bg-backdrop-light focus:outline-none focus:border-backdrop-light focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150'>
+                                <!-- <button  class='mr-5 inline-flex items-center px-4 py-2 bg-backdrop-inv border border-transparent rounded-md font-semibold text-xs text-content-inv uppercase tracking-widest hover:bg-backdrop-light active:bg-backdrop-light focus:outline-none focus:border-backdrop-light focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150'>
                                     {{ __('Add More') }}
-                                </button>
+                                </button> -->
 
                                 <button  class='inline-flex items-center px-4 py-2 bg-backdrop-inv border border-transparent rounded-md font-semibold text-xs text-content-inv uppercase tracking-widest hover:bg-backdrop-light active:bg-backdrop-light focus:outline-none focus:border-backdrop-light focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150'>
                                     {{ __('Create') }}
